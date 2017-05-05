@@ -12,37 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"/>
-
-    <ScrollView
-        android:id="@+id/scrollView"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:onClick="GridView"
+        android:text="GridView"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="RecyclerView"
+        android:text="RecyclerView"
+        android:textAllCaps="false"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <com.bourne.multiviewpager.MultiViewPager
-                android:id="@+id/pager"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                app:matchChildWidth="@+id/vg_cover"/>
-
-            <com.bourne.multiviewpager.MyGridView
-                android:id="@+id/gridView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:verticalSpacing="10dp"
-                android:scrollbars="none"
-                android:horizontalSpacing="10dp"
-                android:transcriptMode="alwaysScroll"
-                android:layout_marginBottom="100dp"
-
-
-                android:numColumns="3"/>
-
-        </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>
