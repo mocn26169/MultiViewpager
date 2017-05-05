@@ -166,6 +166,7 @@ public class DetailActivity extends AppCompatActivity {
     public static void StartOptionsActivity(AppCompatActivity activity, View transitionView, ItemInfo info) {
         Intent intent = new Intent(activity, DetailActivity.class);
         intent.putExtra(ITEM_ID, info);
+//        activity.startActivity(intent);
         // 这里指定了共享的视图元素
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(activity, transitionView, OPTION_IMAGE);
         ActivityCompat.startActivity(activity, intent, options.toBundle());
