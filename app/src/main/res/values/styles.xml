@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- color of the text of action (menu) items in the Toolbar
+             (this is only necessary to support pre-v21 versions) -->
+        <item name="actionMenuTextColor">@color/colorPrimaryDark</item>
+
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:textColorTertiary">@color/colorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimary</item>
+        <item name="android:textColorSecondaryInverse">@color/colorPrimary</item>
+        <item name="android:textColorTertiaryInverse">@color/colorPrimary</item>
+        <item name="android:windowContentTransitions">true</item>
+        
+    </style>
+
+</resources>

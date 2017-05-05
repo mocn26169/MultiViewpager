@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bourne.multiviewpager.DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+        <ImageView
+            android:id="@+id/iv_tool_head"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+        />
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:alpha="0"
+            android:scaleType="center"
+            android:src="@mipmap/back"/>
+
+        <ImageView
+            android:id="@+id/img_frontCover"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="27dp"
+        />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_frontCover"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/img_frontCover"
+            android:alpha="0"
+            android:text="简介\n\nMultiViewPager 是根据support-v4 中ViewPager 控件改造而来，它可以让ViewPager一次显示更宽或者更窄的内容，它很好的处理了page之间的位置关系，能保证每次被选中的page显示在中间。https://github.com/Pixplicity/MultiViewPager"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
