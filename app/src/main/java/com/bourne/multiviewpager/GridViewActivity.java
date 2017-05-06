@@ -74,6 +74,7 @@ public class GridViewActivity extends AppCompatActivity {
         initDatas();
         adapter = new GridViewAdapter(GridViewActivity.this, mDatas);
         mGridView.setAdapter(adapter);
+
         mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override

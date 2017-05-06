@@ -55,9 +55,9 @@ public class DetailActivity extends AppCompatActivity {
         // 这里指定了被共享的视图元素
         ViewCompat.setTransitionName(img_frontCover, OPTION_IMAGE);
 
+        //根据版本判断是否使用动画
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
         {
-            //使用api 23以上加入的方法
              setUpWindowTransition();
         }else {
             img_background.setAlpha(1f);
