@@ -1,5 +1,4 @@
 # MultiViewpager
-横向滚动+转场动画+GridView和RecyclerView动态添加
 
 博客地址http://blog.csdn.net/iromkoear/article/details/71279454
 
