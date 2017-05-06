@@ -88,17 +88,19 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerGridViewAdapter.setOnRecyclerViewItemListener(new RecyclerGridViewAdapter.OnRecyclerViewItemListener() {
             @Override
             public void onItemClickListener(View view, int position) {
+
                 if (position == (mDatas.size()-1)) {
 
                     int index = (int) (Math.random() * imgs.length);
                     Log.e("index",index+"");
                     mDatas.add(mDatas.size()-1,imgs[index]);
 
-                    recyclerGridViewAdapter = new RecyclerGridViewAdapter(RecyclerViewActivity.this, mDatas);
-                    recyclerView.setAdapter(recyclerGridViewAdapter);
+//                    recyclerGridViewAdapter = new RecyclerGridViewAdapter(RecyclerViewActivity.this, mDatas);
+//                    recyclerView.setAdapter(recyclerGridViewAdapter);
                     recyclerGridViewAdapter.notifyDataSetChanged();
 
                 }else {
+                    Log.e("position",position+"");
                     ItemInfo info = new ItemInfo(mDatas.get(position), "");
                     DetailActivity.StartOptionsActivity(RecyclerViewActivity.this, view, info);
                 }
